@@ -12,9 +12,17 @@ namespace Kalkulacka_Loukas
 {
     public partial class Form1 : Form
     {
+        // typ prováděné operace
+        enum enOperace { plus, minus, krat, deleno, clear, rovno }
+        //stavové proměnné
+        float mflCislo1, mflCislo2, mflVysledek;
+        
+        enOperace menAktOperace;
         public Form1()
         {
             InitializeComponent();
+            //inicializace proměnných
+            VseVymazat();
         }
        
 
@@ -38,14 +46,45 @@ namespace Kalkulacka_Loukas
             }
         }
 
-        private void btSmazat_Click(object sender, EventArgs e)
+        private void btOperace_Click(object sender, EventArgs e)
         {
-            try
+            Button lobjTlacitko;
+            //tlacitko ktere zavolalo funci
+            lobjTlacitko = (Button)sender;
+            //vybrat operaci
+            switch (lobjTlacitko.Text)
             {
-                txtDisplay.Text = "0";
+                //vymazat vše
+                case "C" : 
+                    VseVymazat();
+                    break;
+                //sčítání
+                case "+": 
+                    mflCislo1=Convert.ToSingle(txtDisplay.Text);
+                    menAktOperace = enOperace.plus;
+                    txtDisplay.Text = "0";
+                    break;
+                //rovno
+                case "=":
+                    mflCislo2 = Convert.ToSingle(txtDisplay.Text);
+                    mflVysledek = mflCislo1 + mflCislo2;
+                    menAktOperace = enOperace.rovno;
+                    txtDisplay.Text = mflVysledek.ToString();
+                    break;
             }
-            catch (Exception ex)
-            { }
+                
+        }
+
+        //
+        // Uvedení kalkulačky do základního stavu
+        //
+        private void VseVymazat()
+        {
+            //smazat úvodní nulu
+            txtDisplay.Text = "0";
+            //inicializace proměnných
+            mflCislo1 = mflCislo2 = mflVysledek = 0;
+            menAktOperace = enOperace.clear;
         }
     }
 }

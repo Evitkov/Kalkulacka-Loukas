@@ -165,7 +165,7 @@
             this.btSmazat.TabIndex = 11;
             this.btSmazat.Text = "C";
             this.btSmazat.UseVisualStyleBackColor = true;
-            this.btSmazat.Click += new System.EventHandler(this.btSmazat_Click);
+            this.btSmazat.Click += new System.EventHandler(this.btOperace_Click);
             // 
             // btOperacePlus
             // 
@@ -175,6 +175,7 @@
             this.btOperacePlus.TabIndex = 12;
             this.btOperacePlus.Text = "+";
             this.btOperacePlus.UseVisualStyleBackColor = true;
+            this.btOperacePlus.Click += new System.EventHandler(this.btOperace_Click);
             // 
             // btOperaceMinus
             // 
@@ -184,6 +185,7 @@
             this.btOperaceMinus.TabIndex = 13;
             this.btOperaceMinus.Text = "-";
             this.btOperaceMinus.UseVisualStyleBackColor = true;
+            this.btOperaceMinus.Click += new System.EventHandler(this.btOperace_Click);
             // 
             // btOperaceKrat
             // 
@@ -193,6 +195,7 @@
             this.btOperaceKrat.TabIndex = 14;
             this.btOperaceKrat.Text = "*";
             this.btOperaceKrat.UseVisualStyleBackColor = true;
+            this.btOperaceKrat.Click += new System.EventHandler(this.btOperace_Click);
             // 
             // btOperaceDeleno
             // 
@@ -202,6 +205,7 @@
             this.btOperaceDeleno.TabIndex = 15;
             this.btOperaceDeleno.Text = "/";
             this.btOperaceDeleno.UseVisualStyleBackColor = true;
+            this.btOperaceDeleno.Click += new System.EventHandler(this.btOperace_Click);
             // 
             // btOperaceVysledek
             // 
@@ -211,6 +215,7 @@
             this.btOperaceVysledek.TabIndex = 16;
             this.btOperaceVysledek.Text = "=";
             this.btOperaceVysledek.UseVisualStyleBackColor = true;
+            this.btOperaceVysledek.Click += new System.EventHandler(this.btOperace_Click);
             // 
             // Form1
             // 
