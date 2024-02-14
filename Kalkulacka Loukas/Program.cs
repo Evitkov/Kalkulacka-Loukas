@@ -16,7 +16,7 @@ namespace Kalkulacka_Loukas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kalkulacka());
+            Application.Run(new Form1());
         }
     }
 }
