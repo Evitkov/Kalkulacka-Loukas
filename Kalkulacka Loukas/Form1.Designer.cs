@@ -52,14 +52,14 @@
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtDisplay.Location = new System.Drawing.Point(32, 38);
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(403, 29);
+            this.txtDisplay.Size = new System.Drawing.Size(302, 29);
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btCislo1
             // 
-            this.btCislo1.Location = new System.Drawing.Point(32, 90);
+            this.btCislo1.Location = new System.Drawing.Point(32, 99);
             this.btCislo1.Name = "btCislo1";
             this.btCislo1.Size = new System.Drawing.Size(71, 55);
             this.btCislo1.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // btCislo2
             // 
-            this.btCislo2.Location = new System.Drawing.Point(131, 90);
+            this.btCislo2.Location = new System.Drawing.Point(109, 99);
             this.btCislo2.Name = "btCislo2";
             this.btCislo2.Size = new System.Drawing.Size(71, 55);
             this.btCislo2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             // btCislo3
             // 
-            this.btCislo3.Location = new System.Drawing.Point(234, 90);
+            this.btCislo3.Location = new System.Drawing.Point(186, 99);
             this.btCislo3.Name = "btCislo3";
             this.btCislo3.Size = new System.Drawing.Size(71, 55);
             this.btCislo3.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             // btCislo4
             // 
-            this.btCislo4.Location = new System.Drawing.Point(32, 165);
+            this.btCislo4.Location = new System.Drawing.Point(32, 160);
             this.btCislo4.Name = "btCislo4";
             this.btCislo4.Size = new System.Drawing.Size(71, 55);
             this.btCislo4.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             // btCislo5
             // 
-            this.btCislo5.Location = new System.Drawing.Point(131, 165);
+            this.btCislo5.Location = new System.Drawing.Point(109, 160);
             this.btCislo5.Name = "btCislo5";
             this.btCislo5.Size = new System.Drawing.Size(71, 55);
             this.btCislo5.TabIndex = 5;
@@ -109,7 +109,7 @@
             // 
             // btCislo6
             // 
-            this.btCislo6.Location = new System.Drawing.Point(234, 165);
+            this.btCislo6.Location = new System.Drawing.Point(186, 160);
             this.btCislo6.Name = "btCislo6";
             this.btCislo6.Size = new System.Drawing.Size(71, 55);
             this.btCislo6.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             // btCislo7
             // 
-            this.btCislo7.Location = new System.Drawing.Point(32, 236);
+            this.btCislo7.Location = new System.Drawing.Point(32, 221);
             this.btCislo7.Name = "btCislo7";
             this.btCislo7.Size = new System.Drawing.Size(71, 55);
             this.btCislo7.TabIndex = 7;
@@ -129,7 +129,7 @@
             // 
             // btCislo8
             // 
-            this.btCislo8.Location = new System.Drawing.Point(131, 236);
+            this.btCislo8.Location = new System.Drawing.Point(109, 221);
             this.btCislo8.Name = "btCislo8";
             this.btCislo8.Size = new System.Drawing.Size(71, 55);
             this.btCislo8.TabIndex = 8;
@@ -139,7 +139,7 @@
             // 
             // btCislo9
             // 
-            this.btCislo9.Location = new System.Drawing.Point(234, 236);
+            this.btCislo9.Location = new System.Drawing.Point(186, 221);
             this.btCislo9.Name = "btCislo9";
             this.btCislo9.Size = new System.Drawing.Size(71, 55);
             this.btCislo9.TabIndex = 9;
@@ -149,7 +149,7 @@
             // 
             // btCislo0
             // 
-            this.btCislo0.Location = new System.Drawing.Point(32, 313);
+            this.btCislo0.Location = new System.Drawing.Point(32, 282);
             this.btCislo0.Name = "btCislo0";
             this.btCislo0.Size = new System.Drawing.Size(71, 55);
             this.btCislo0.TabIndex = 10;
@@ -159,7 +159,7 @@
             // 
             // btSmazat
             // 
-            this.btSmazat.Location = new System.Drawing.Point(131, 313);
+            this.btSmazat.Location = new System.Drawing.Point(109, 282);
             this.btSmazat.Name = "btSmazat";
             this.btSmazat.Size = new System.Drawing.Size(71, 55);
             this.btSmazat.TabIndex = 11;
@@ -169,7 +169,7 @@
             // 
             // btOperacePlus
             // 
-            this.btOperacePlus.Location = new System.Drawing.Point(338, 90);
+            this.btOperacePlus.Location = new System.Drawing.Point(263, 99);
             this.btOperacePlus.Name = "btOperacePlus";
             this.btOperacePlus.Size = new System.Drawing.Size(71, 55);
             this.btOperacePlus.TabIndex = 12;
@@ -179,7 +179,7 @@
             // 
             // btOperaceMinus
             // 
-            this.btOperaceMinus.Location = new System.Drawing.Point(338, 165);
+            this.btOperaceMinus.Location = new System.Drawing.Point(263, 160);
             this.btOperaceMinus.Name = "btOperaceMinus";
             this.btOperaceMinus.Size = new System.Drawing.Size(71, 55);
             this.btOperaceMinus.TabIndex = 13;
@@ -189,7 +189,7 @@
             // 
             // btOperaceKrat
             // 
-            this.btOperaceKrat.Location = new System.Drawing.Point(338, 236);
+            this.btOperaceKrat.Location = new System.Drawing.Point(263, 221);
             this.btOperaceKrat.Name = "btOperaceKrat";
             this.btOperaceKrat.Size = new System.Drawing.Size(71, 55);
             this.btOperaceKrat.TabIndex = 14;
@@ -199,7 +199,7 @@
             // 
             // btOperaceDeleno
             // 
-            this.btOperaceDeleno.Location = new System.Drawing.Point(338, 313);
+            this.btOperaceDeleno.Location = new System.Drawing.Point(263, 282);
             this.btOperaceDeleno.Name = "btOperaceDeleno";
             this.btOperaceDeleno.Size = new System.Drawing.Size(71, 55);
             this.btOperaceDeleno.TabIndex = 15;
@@ -209,7 +209,7 @@
             // 
             // btOperaceVysledek
             // 
-            this.btOperaceVysledek.Location = new System.Drawing.Point(234, 313);
+            this.btOperaceVysledek.Location = new System.Drawing.Point(186, 282);
             this.btOperaceVysledek.Name = "btOperaceVysledek";
             this.btOperaceVysledek.Size = new System.Drawing.Size(71, 55);
             this.btOperaceVysledek.TabIndex = 16;
@@ -221,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 450);
+            this.ClientSize = new System.Drawing.Size(378, 450);
             this.Controls.Add(this.btOperaceVysledek);
             this.Controls.Add(this.btOperaceDeleno);
             this.Controls.Add(this.btOperaceKrat);

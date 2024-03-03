@@ -37,14 +37,23 @@ namespace Kalkulacka_Loukas
             {
                 // smazat úvodní nulu
                 if (txtDisplay.Text == "0") txtDisplay.Text = "";
+                //maže výsledek pokud hned zadáme číslo
+                else if (menAktOperace == enOperace.rovno) txtDisplay.Text = "";
+                //maže nulu po napsání nového čísla
+                else if (Convert.ToSingle(txtDisplay.Text) == mflCislo1) txtDisplay.Text = "";
                 // přidat další číslo
                 txtDisplay.Text = txtDisplay.Text + ((Button)sender).Text;
+
             } 
             catch (Exception ex) 
             {
-                MessageBox.Show("Seš mongoloid");
+                MessageBox.Show("Zkus to znovu");
             }
         }
+        //
+        //definování proměných za pomocí stisknutého tlačítka
+        //
+    
 
         private void btOperace_Click(object sender, EventArgs e)
         {
@@ -62,22 +71,41 @@ namespace Kalkulacka_Loukas
                 case "+": 
                     mflCislo1=Convert.ToSingle(txtDisplay.Text);
                     menAktOperace = enOperace.plus;
-                    txtDisplay.Text = "0";
                     break;
-                //rovno
+                //odčítání
+                case "-":
+                    mflCislo1 = Convert.ToSingle(txtDisplay.Text);
+                    menAktOperace = enOperace.minus;
+                    break;
+                //dělení
+                case "/":
+                    mflCislo1 = Convert.ToSingle(txtDisplay.Text);
+                    menAktOperace = enOperace.deleno;
+                    break;
+                //násobení
+                case "*":
+                    mflCislo1 = Convert.ToSingle(txtDisplay.Text);
+                    menAktOperace = enOperace.krat;
+                    break;
                 case "=":
                     mflCislo2 = Convert.ToSingle(txtDisplay.Text);
-                    mflVysledek = mflCislo1 + mflCislo2;
+                    // provedení finálního výpočtu po stisku =
+          
+                    if (menAktOperace == enOperace.plus) mflVysledek = mflCislo1 + mflCislo2;
+                    else if (menAktOperace == enOperace.minus) mflVysledek = mflCislo1 - mflCislo2;
+                    else if (menAktOperace == enOperace.deleno) mflVysledek = mflCislo1 / mflCislo2;
+                    else if (menAktOperace == enOperace.krat) mflVysledek = mflCislo1 * mflCislo2;
+
                     menAktOperace = enOperace.rovno;
                     txtDisplay.Text = mflVysledek.ToString();
                     break;
             }
-                
+            
         }
 
-        //
-        // Uvedení kalkulačky do základního stavu
-        //
+                    //
+                    // Uvedení kalkulačky do základního stavu
+                    //
         private void VseVymazat()
         {
             //smazat úvodní nulu
